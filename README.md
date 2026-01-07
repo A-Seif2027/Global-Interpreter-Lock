@@ -67,15 +67,9 @@ Even with 4 threads, execution time is **similar to single-threaded code** due t
 
 **Solution**: Replace `threading.Thread` with `multiprocessing.Process` to fully utilize multiple CPU cores.
 
-## 6. Key Takeaways
-
-- **GIL** exists to ensure **thread-safety** of Python’s memory management.
-- **Threads in Python** are effective for **I/O-bound tasks** but **inefficient for CPU-bound tasks**.
-- Use **multiprocessing**, C extensions, or alternative Python interpreters to bypass GIL for parallel CPU-intensive workloads.
 
 ## References / Further Reading
 
 1. [Official Python docs on GIL](https://docs.python.org/3/glossary.html#term-global-interpreter-lock)  
-2. David Beazley – “Python’s GIL: Past, Present, and Future”  
-3. Python Wiki – [GIL](https://wiki.python.org/moin/GlobalInterpreterLock)
+2. Python Wiki – [GIL](https://wiki.python.org/moin/GlobalInterpreterLock)
 
